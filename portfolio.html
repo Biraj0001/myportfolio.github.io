@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRAJPAULPF</title>
+</head>
+<link rel="icon"
+        href="https://seeklogo.com/images/A/adobe-portfolio-logo-A289F53AF8-seeklogo.com.png"
+        type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Baloo+Bhai+2&family=Fredoka+One&family=Lobster&family=Pattaya&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Baloo+Bhai+2&family=Fredoka+One&family=Lobster&family=Orbitron&family=Pattaya&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fc5f4fb047.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="modechang2.css" id="theme" >
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <li><img src="pf/1.png" alt="" width="30px" height="30px" id="logo" style="border-radius: 20px ;"></li>
+            <li><h1>Portfolio</h1></li>
+        </div>
+        <div class="mid">
+            <li><a href="#intro" style="text-decoration:none ;">Home</a></li>
+            <li><a href="#project" style="text-decoration:none ;">Projects</a></li>
+            <li><a href="#contact" style="text-decoration:none ;">Contact</a></li>
+            <li><button onclick="theme()"><i class="fa-solid fa-moon" id="modee"></i></button></li>
+        </div>
+        <div class="right">
+            <li><input type="text" placeholder="Type here to search..."></li>
+            <li><button ><i class="fa-solid fa-magnifying-glass" ></i></button></li>
+        </div>
+    </nav>
+
+    <div class="intro">
+      <li>HEY!</li>
+      <li>I'M BIRAJ PAUL</li>
+      <li>A  WEBDEVELOPER..</li> 
+    </div>
+    <!-- <div class="emni" ></div> -->
+    <div class="project">
+
+        <div class="title" id="project">
+            These are some of my projects
+        </div>
+        <div class="item">
+            <li> <a href="" style="text-decoration:none ;"><div class="image" id="music"></div> <div class="name" >Music Album</div></a></li>
+            <li> <a href="https://0cvkpdpkciovxtkrnsgibw.on.drv.tw/www.calBiraj/calculator.html" target="_blank" style="text-decoration:none ;"><div class="image" id="calc"></div> <div class="name">Calculator</div></a></li>
+            <!-- <li><div class="image"></div> <div class="name"></div></li> -->
+        </div>
+
+        <div class="contact">
+            <!-- sdfghjhgfdfghjkjhgfdfghjkjhgfddfghjklkjhgfdsdfghjkjhgfdsdfghjklkjhgfdsdfghjkjhgfdfghjklkjhgfd -->
+
+            <li id="copy"> ©Copyright 1999-2021 by Bis.All rights reserved |</li>
+            <li><a href="https://www.facebook.com/biraj.paul.509" style="text-decoration:none ;"><button id="fb"><i class="fa-brands fa-facebook"></i></button></a></li>
+            <li><a href="https://wa.me/6290178346?text=Hi%2C%20I%20am%20Biraj%20Paul" style="text-decoration:none ;"><button id="wp"><i class="fa-brands fa-whatsapp"></i></button></a></li>
+            <li><a href="https://github.com/" style="text-decoration:none ;"><button id="git"><i class="fa-brands fa-github"></i></button></a></li>
+            <li><a href="https://www.linkedin.com/in/biraj-paul-961478222/" style="text-decoration:none ;"><button id="linked"><i class="fa-brands fa-linkedin"></i></button></a></li>
+            <li><a href="https://twitter.com/biraj0001" style="text-decoration:none ;"><button id="twitter"><i class="fa-brands fa-twitter"></i></button></a></li>
+            <li><a href="https://www.instagram.com/hearty.struggler/" style="text-decoration:none ;"><button id="insta"><i class="fa-brands fa-instagram"></i></button></a></li>
+            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtMhFClfRfvsVSsRXCpQzmDrqgzFSQCKxTbbCnPSZdnhsHpGhbpKXzxTSrcRsPmLPkHnGbgQ" target="_blank" style="text-decoration: none ; color: white; font-size: 12 px; display: flex;"><button id="mail"><i class="fa-solid fa-envelope"></i></button><div class="mailid">paul.biru02@gmail.com</div> </a></li>
+        </div>
+</body>
+</html>
+<script>
+    function theme(){
+        let mode= document.getElementById("theme");
+        let link= mode.href;
+        let same= link.split("modechang2.css");
+        let icon = document.getElementById("modee");
+        // console.log(same);
+        let main=link.substr(-14)
+ if(main=="modechang2.css"){
+    mode.href=same[0] + "modechange.css";
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+    logo.src="pf/2.png";
+
+    // console.log(mode.href);
+ }
+
+ else{
+console.log(link);
+icon.classList.remove("fa-sun");
+icon.classList.add("fa-moon");
+let same2 = link.split("modechange.css");
+mode.href=same2[0] + "modechang2.css";
+logo.src="pf/1.png";
+ }
+    }
+</script>
